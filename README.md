@@ -1,6 +1,6 @@
 # ChatBot - Elite Qualifier
 
-Simple (or clever and funny?) description
+A ChatBot which responds with a simple introduction. Then tells funny jokes, fun facts, or asks you a question.
 
 ## Table of Contents
 
@@ -12,14 +12,12 @@ Simple (or clever and funny?) description
 
 ## Background
 
-This is why this application exists.
+To chat with the user.
 
-## Install
-
-These are the steps to setup your local environment to run this application.
+## Install [python](https://www.python.org/)
 
 ## Usage
 
-These are the steps to use the application or interact with it.
+Just say hi, enter your name, and start chatting!
 
 ### Any optional sections
