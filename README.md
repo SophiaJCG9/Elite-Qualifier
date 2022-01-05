@@ -20,4 +20,4 @@ To chat with the user.
 
 Just say hi, enter your name, and start chatting!
 
-### Any optional sections
+### Any optional section
