@@ -1,9 +1,35 @@
-#Random Jokes retrieved from: https://www.fatherly.com/play/best-funny-one-liners-clean-jokes-kids/
+import random
+#header
+print("Hello, Welcome to ChatBot. I am Bot: Sophia. Lets Chat! To end chat simply type: Stop. Lets chat! If chatting stops you can type: Question! or Joke!")
+
+#Seperate header from Chat
+print("*************************************************")
+
+#Chat
+ChatBot_Name = "Sophia"
+
+quit_character = "Stop"
+
+userName = (str(input(ChatBot_Name + ": Hello! Whats your name?\n")))
+#Common Responses I could think of
+responses = {"how are you?": "Good. And you?" , "good": "Narly!", "great": "Glad you're doing well", "fine": "Only fine? Darn.", "bad": "Oh no. I hope you feel better soon.", "terrible": "Tommorow will be better. I know it!", "what are you?": "I'm the best chatBot out there!", "ok": "Certainly."}
+
+#Chat Continued (Using Common Responses)
+def chat_1():
+  
+  
+  userInput = str.lower(input(ChatBot_Name + ": " + "Greetings " + userName + "! How are you?\n"))
+
+  #index = user_response.index(userInput
+  #print (ChatBot_Name,": ", bot_answer[index])
+
+  
+  if userInput in responses.keys():
+    print(ChatBot_Name + ": " + responses[userInput])
+
+chat_1()
 
 #Random facts retrieved from: https://parade.com/966564/parade/fun-facts/
-
-#random bot questions retrieved from: https://www.gifts.com/blog/conversation-starters
-import random
 
 def generate_fact(userInput):
   facts = [
@@ -24,6 +50,8 @@ def generate_fact(userInput):
   "8. Sliced bread was first manufactured by machine and sold in the 1920s by the Chillicothe Baking Company in Missouri. It was the greatest thing since…unsliced bread? (chllicothenews.com)"
   ]
   return random.choice(facts)
+  
+#Random Jokes retrieved from: https://www.fatherly.com/play/best-funny-one-liners-clean-jokes-kids/
 
 def generate_joke(userInputTwo):
   jokes = [
@@ -44,6 +72,7 @@ def generate_joke(userInputTwo):
     "I’m throwing a space-themed party for my birthday, but I don’t want to planet."
   ]
   return random.choice(jokes)
+
 def generate_questions(userInputThree):
   questions= [
   "If you were in a circus, which character would you be?",
@@ -64,15 +93,11 @@ def generate_questions(userInputThree):
   
   return random.choice(questions)
   return random.choice(answers)
-"""
-def generate_answer(userInputFour):
-  answers = [
-    "How interesting!",
-    "You don't say!",
-    "Very cool!",
-    "Programming is fun!"
-  ]
-"""
+
+
+
+
+
 
 
 def init_chat():
@@ -80,7 +105,7 @@ def init_chat():
   userInput = input(" ")
 
   while userInput != "Random Fact!":
-    userInput = input("Hmm I don't understand. Type: Stop. if you want to end chat. Otherwhise ask me for another Random Fact! or type : Joke! or type: Ask me a question!")
+    userInput = input("Hmm I don't understand. Type: Stop. if you want to end chat. Ask me for a Random Fact by typing exactly: Random Fact!")
  
   while userInput == "Random Fact!":
     userInput = input(generate_fact(userInput) + "\n")
@@ -97,3 +122,9 @@ def init_chat():
 
 if __name__ == "__main__":
   init_chat()
+
+
+
+
+
+
