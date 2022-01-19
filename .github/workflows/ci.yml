@@ -1,0 +1,18 @@
+YAML format
+
+# Comments use # like python
+
+# supports strings and numbers as types
+
+# List are bulleted using - in “block format”
+- a
+- b
+- c
+# or using brackets like python for “inline format”
+[a, b, c]
+
+# Dictionaries have a name, and then one or more key-value pairs (key: value)
+mydict:
+  a: 1
+  b: 2
+  c: 3
